@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+<paths>
+    <root-path
+        name="storage/emulated/0"
+        path="." />
+&lt;!&ndash;    <external-files-path
+        name="storage/emulated/0"
+        path="." />&ndash;&gt;
+</paths>-->
+<paths>
+    <root-path
+        name="storage/emulated/0"
+        path="." />
+    <external-path
+        name="external_files"
+        path="." />
+    <external-files-path
+        name="external_files"
+        path="." />
+    <external-path
+        name="media"
+        path="." />
+</paths>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+        android:id="@+id/rl_calender_mainview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cc000000">
+    
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_130sdp"
+            android:background="@color/white"
+            android:paddingTop="@dimen/_5sdp">
+        
+            <RelativeLayout
+                android:id="@+id/rl_btns"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp">
+            
+                <ImageView
+                    android:id="@+id/tv_year_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_100sdp"
+                    android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
+            
+                <TextView
+                    android:id="@+id/tv_currentyear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="2019"
+                    android:textSize="@dimen/_15sdp" />
+            
+                <ImageView
+                    android:id="@+id/tv_year_forward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_100sdp"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+            </RelativeLayout>
+        
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rl_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rl_btns"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_10sdp"></android.support.v7.widget.RecyclerView>
+    
+    
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
